@@ -1,7 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+
+import Bulubaria from "../assets/svgs/Bulubaria.svg";
 import Grids from "../components/Grids";
 import { useNavigate } from "react-router-dom";
+import gunungBawa from "../assets/images/gunungcardbawa.jpg";
+import Latimojong from "../assets/svgs/Latimojong.svg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function Card() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: false,
+    });
+  }, []);
+
   const navigate = useNavigate();
 
   const handleRulesClick = () => {
@@ -9,14 +22,13 @@ export default function Card() {
   };
   return (
     <>
-      <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-6 sm:gap-8 lg:gap-11">
+      <div
+        data-aos="fade-up"
+        className="flex flex-col sm:flex-row flex-wrap justify-center gap-6 sm:gap-8 lg:gap-11"
+      >
         <div className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-full sm:w-80 lg:w-96">
           <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-            <img
-              src="https://img.freepik.com/free-photo/volcano-with-mist-sunset_1150-18322.jpg?t=st=1728735140~exp=1728738740~hmac=fa68e2fdcbee9d4f3606763bb297d848d88bf64bf6c8b217ce33438dce8b4c4e&w=996"
-              alt="card-image"
-              className="w-full h-full object-cover"
-            />
+            <img src={gunungBawa} className="w-full h-full object-cover" />
           </div>
           <div className="p-4">
             <div className="flex items-center mb-2">
@@ -61,7 +73,7 @@ export default function Card() {
         <div className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-full sm:w-80 lg:w-96">
           <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
             <img
-              src="https://img.freepik.com/free-photo/mountain-forest-blue-sky_1150-10834.jpg?t=st=1728736869~exp=1728740469~hmac=0eca0c047ac5e5bc794a9e378193172a3c1d4c973a6a9480175230bfc5f164e4&w=996"
+              src={Bulubaria}
               alt="card-image"
               className="w-full h-full object-cover"
             />
@@ -109,7 +121,7 @@ export default function Card() {
         <div className="relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-full sm:w-80 lg:w-96">
           <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
             <img
-              src="https://img.freepik.com/free-photo/mountainous-landscape-dusk_1150-18309.jpg?t=st=1728737302~exp=1728740902~hmac=497e513c327816639aa435c6f59c5faaf02613b2bc2b608e792c7175914a6a4e&w=996"
+              src={Latimojong}
               alt="card-image"
               className="w-full h-full object-cover"
             />

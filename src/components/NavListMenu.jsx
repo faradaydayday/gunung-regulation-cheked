@@ -63,11 +63,11 @@ export default function NavListMenu() {
                   leaveTo="transform scale-95 opacity-0"
                 >
                   <Menu.Items className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
-                    <DropdownItem to="/regulasi-barang">
+                    <DropdownItem to="/404">
                       Regulasi Barang
                     </DropdownItem>
-                    <DropdownItem to="/sampah">Sampah</DropdownItem>
-                    <DropdownItem to="/regulasi-pendaki">
+                    <DropdownItem to="/404">Sampah</DropdownItem>
+                    <DropdownItem to="/404 ">
                       Regulasi Pendaki
                     </DropdownItem>
                   </Menu.Items>
@@ -148,7 +148,7 @@ export default function NavListMenu() {
                   <DropdownItem to="/regulasi-barang">
                     Regulasi Barang
                   </DropdownItem>
-                  <DropdownItem to="/sampah">Sampah</DropdownItem>
+                  <DropdownItem to="/404">Sampah</DropdownItem>
                   <DropdownItem to="/regulasi-pendaki">
                     Regulasi Pendaki
                   </DropdownItem>

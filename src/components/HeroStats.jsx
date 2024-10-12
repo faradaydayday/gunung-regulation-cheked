@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from "react";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const HeroStats = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: false,
+    });
+  }, []);
+
   const [rate, setRate] = useState(0);
   const [companies, setCompanies] = useState(0);
   const [difficulties, setDifficulties] = useState(0);
@@ -29,7 +37,7 @@ const HeroStats = () => {
 
   return (
     <div
-      data-aos="fade-left"
+      data-aos="fade-up"
       className=" text-9xl lg:col-span-1 lg:w-full lg:h-full lg:bg-gradient-to-r"
     >
       <div className="sticky top-0 start-0 py-8 lg:ps-8 ">
@@ -41,7 +49,7 @@ const HeroStats = () => {
                 {rate}+
               </p>
               <h4 className="text-base sm:text-lg font-semibold text-gray-800 ">
-               Gunung Terdaftar
+                Gunung Terdaftar
               </h4>
             </div>
 
@@ -58,7 +66,8 @@ const HeroStats = () => {
             {/* User Difficulties */}
             <div className="text-center stat">
               <p className="mt-1 sm:mt-2 text-3xl sm:text-4xl font-bold text-[#353535]">
-                {difficulties}<span className="text-[2rem]" >t</span>
+                {difficulties}
+                <span className="text-[2rem]">t</span>
               </p>
               <h4 className="text-base sm:text-lg font-semibold text-gray-800 ">
                 Sampah Bag

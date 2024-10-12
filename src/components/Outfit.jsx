@@ -1,4 +1,6 @@
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const callouts = [
     {
       name: 'Klik gambar untuk melihat lebih detail',
@@ -45,8 +47,14 @@ const callouts = [
   ]
   
   export default function Outfit() {
+    useEffect(() => {
+      AOS.init({
+        duration: 2000,
+        once: false,
+      });
+    }, []);
     return (
-      <div className="bg-gray-100">
+      <div data-aos="fade-up" className="bg-gray-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:max-w-none lg:py-32">
             <h2 className="text-2xl font-bold text-gray-900">Outfit Viral On Tiktok</h2>
