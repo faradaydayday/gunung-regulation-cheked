@@ -5,7 +5,7 @@ import HeroStats from "../components/HeroStats";
 function HeroSection() {
   return (
     <>
-      <div className=" relative -z-10">
+      <div className=" relative -z-10 mt-24 ">
         <HeroImage />
         <HeroStats />
       </div>  

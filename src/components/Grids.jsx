@@ -2,6 +2,7 @@ import Bulubaria from "../assets/svgs/Bulubaria.svg";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import jaki from "../assets/images/jakiey.jpg";
 export default function Grids() {
   useEffect(() => {
     AOS.init({
@@ -20,7 +21,7 @@ export default function Grids() {
                 <img
                   style={{ width: "100%" }}
                   className="size-full object-top"
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Jalur_pos_8_ke_7_gunungn_lompobattang.jpg/337px-Jalur_pos_8_ke_7_gunungn_lompobattang.jpg"
+                  src={jaki}
                   alt=""
                 />
               </div>

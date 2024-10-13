@@ -4,9 +4,9 @@ import NavListMenu from "../components/NavListMenu";
 function NavbarApp() {
   return( 
   <>
-
-   <NavListMenu/>
   
+  <NavListMenu />
+   
   </>
 )}
 

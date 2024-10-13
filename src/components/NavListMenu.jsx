@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import {
   ChevronDownIcon,
@@ -33,10 +33,35 @@ const DropdownItem = ({ to, children }) => (
 
 export default function NavListMenu() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrollingDown, setIsScrollingDown] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        // User is scrolling down
+        setIsScrollingDown(true);
+      } else {
+        // User is scrolling up
+        setIsScrollingDown(false);
+      }
+      setLastScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
 
   return (
     <>
-      <nav className="shadow-md py-2">
+      <nav
+        className={`shadow-md py-2 fixed top-0 left-0 w-full z-50 bg-white transition-transform duration-300 ${
+          isScrollingDown ? "-translate-y-full" : "translate-y-0"
+        }`}
+      >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -63,13 +88,9 @@ export default function NavListMenu() {
                   leaveTo="transform scale-95 opacity-0"
                 >
                   <Menu.Items className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
-                    <DropdownItem to="/404">
-                      Regulasi Barang
-                    </DropdownItem>
+                    <DropdownItem to="/404">Regulasi Barang</DropdownItem>
                     <DropdownItem to="/404">Sampah</DropdownItem>
-                    <DropdownItem to="/404 ">
-                      Regulasi Pendaki
-                    </DropdownItem>
+                    <DropdownItem to="/404">Regulasi Pendaki</DropdownItem>
                   </Menu.Items>
                 </Transition>
               </Menu>

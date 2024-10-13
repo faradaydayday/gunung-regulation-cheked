@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { hover } from "@testing-library/user-event/dist/hover";
 function Cooperation() {
   useEffect(() => {
     AOS.init({
@@ -58,7 +59,7 @@ function Cooperation() {
               src="https://areioutdoorgear.co.id/wp-content/uploads/2024/07/logo-arei_vectorized1-1024x369.png"
               width={158}
               height={48}
-              className="col-span-2 w-full object-contain sm:col-start-auto lg:col-span-1"
+              className="col-span-2 w-full object-contain sm:col-start-auto lg:col-span-1 hover:grayscale-0 "
             />
           </div>
         </div>
