@@ -166,7 +166,7 @@ const RulesPegunungan = () => {
 
         <Card
           title="KONSUKUENSI DAN DENDA"
-          description="HUKUMAN YANG DI DAPAT JIKA MELANNGAR"
+          description="HUKUMAN YANG DI DAPAT JIKA MELANGGAR"
           buttonText="hukuman yang di dapat bagi para pendaki yang melanggar aturan/rules"
           theme="dark"
         />

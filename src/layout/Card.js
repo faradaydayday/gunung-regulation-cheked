@@ -52,7 +52,7 @@ export default function Card() {
               </div>
             </div>
             <p className="text-slate-600 leading-normal font-light">
-              Gunung Bawakaraeng di Sulawesi Selatan, setinggi 2.830 meter,
+              Gunung Bawakaraeng di Sulawesi Selatan, setinggi 2.830 MDPL,
               dikenal sebagai tujuan pendakian populer dengan pemandangan indah
               dan nilai spiritual bagi suku Bugis-Makassar. Gunung ini
               menawarkan medan menantang dan hutan tropis lebat, menarik para
@@ -101,7 +101,7 @@ export default function Card() {
             </div>
             <p className="text-slate-600 leading-normal font-light">
               Gunung Bulubaria adalah gunung di Sulawesi Selatan dengan
-              ketinggian sekitar 2.872 meter. Gunung ini menawarkan pemandangan
+              ketinggian sekitar 2.730 MDPL. Gunung ini menawarkan pemandangan
               alam yang menawan serta menjadi tujuan populer bagi para pendaki
               yang mencari petualangan di tengah keindahan hutan tropis. Seperti
               banyak gunung di Sulawesi.
@@ -148,8 +148,8 @@ export default function Card() {
               </div>
             </div>
             <p className="text-slate-600 leading-normal font-light">
-              Gunung Bulusarraung adalah gunung yang terletak di Sulawesi
-              Selatan, Indonesia, dengan ketinggian sekitar 2.830 meter. Gunung
+              Gunung Latimojong adalah gunung yang terletak di Sulawesi
+              Selatan, Indonesia, dengan ketinggian sekitar 3.478 MDPL. Gunung
               ini merupakan bagian dari deretan pegunungan di wilayah tersebut
               dan terkenal dengan keindahan alamnya, termasuk hutan tropis dan
               pemandangan yang menakjubkan.

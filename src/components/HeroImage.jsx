@@ -19,7 +19,7 @@ const HeroImage = () => {
       />
       <div className="absolute inset-0 bg-black bg-opacity-30 flex flex-col items-center justify-center text-white">
         <h1 className="text-4xl md:text-6xl font-semibold font-poppins text-center mb-4">
-           Jaga kebersiahan Puncak
+           Jaga kebersihan Puncak
           <br />
              Masa Depan Alam
         </h1>
@@ -27,7 +27,7 @@ const HeroImage = () => {
           className="bg-white text-black py-2 px-6 rounded-full font-semibold  "
           style={buttonStyle}
         >
-          Get Started
+          Mulai Pendakian
         </button>
       </div>
     </div>
