@@ -129,7 +129,7 @@ export default function Card() {
           <div className="p-4">
             <div className="flex items-center mb-2">
               <h6 className="text-slate-800 text-xl font-semibold">
-                Gunung Bulusarraung
+                Gunung Latimojong
               </h6>
               <div className="flex items-center gap-1 ml-auto">
                 <svg
@@ -148,10 +148,10 @@ export default function Card() {
               </div>
             </div>
             <p className="text-slate-600 leading-normal font-light">
-              Gunung Latimojong adalah gunung yang terletak di Sulawesi
-              Selatan, Indonesia, dengan ketinggian sekitar 3.478 MDPL. Gunung
-              ini merupakan bagian dari deretan pegunungan di wilayah tersebut
-              dan terkenal dengan keindahan alamnya, termasuk hutan tropis dan
+              Gunung Latimojong adalah gunung yang terletak di Sulawesi Selatan,
+              Indonesia, dengan ketinggian sekitar 3.478 MDPL. Gunung ini
+              merupakan bagian dari deretan pegunungan di wilayah tersebut dan
+              terkenal dengan keindahan alamnya, termasuk hutan tropis dan
               pemandangan yang menakjubkan.
             </p>
           </div>
